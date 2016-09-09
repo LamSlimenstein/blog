@@ -1,7 +1,11 @@
-h1 Welcome to Harp.
-h3 This is yours to own. Enjoy.
+h1 magician03's Blog
+h3 I write about building stuff on web and my insights, experiences with it.
+br
 
-ul
+
+ul.posts
   each article, slug in public.articles._data
-    li
-      a(href="/articles/#{ slug }") #{ article.title }
+    li.posts
+      a(href="/articles/#{ slug }") 
+        span.glyphicon.glyphicon-console(aria-hidden='true')
+        | #{ article.title }
