@@ -1,12 +1,12 @@
 /**
  * Base Variables
  */
-$font-header: 'Space Mono', monospace;
-$font-body: 'Inconsolata', monospace;
-$font-post: 'Lora', serif;
+$font-header: 'Tillana', cursive;
+$font-body: 'Ubuntu Mono', monospace;
+$font-post: 'Ubuntu Mono', monospace;
 
-$color-alpha: #9f8f68;
-$color-alpha--light: #f5f3ef;
+$color-alpha: #856aa0;
+$color-alpha--light: #f2eff5;
 
 $color-black: #0a0a0a;
 $color-grey: #f8f9f9;
@@ -28,7 +28,7 @@ $mq-xxl: 114em;
 
 body {
   font-family: $font-body;
-  font-feature-settings: 'liga' 0;
+  //font-feature-settings: 'liga' 0;
   font-size: 100%;
   line-height: 1.6;
 
@@ -64,14 +64,14 @@ h1, h2 {
 }
 
 h1 {
-  $fontSize: 3em;
+  $fontSize: 40px;
 
   @media (min-width: $mq-md) {
     font-size: $fontSize;
   }
 
   @media (min-width: $mq-xl) {
-    font-size: $fontSize + 0.5em;
+    font-size: $fontSize + 8px;
   }
 }
 

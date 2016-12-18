@@ -84,6 +84,7 @@
   &__img {
     will-change: opacity;
     animation: fade-in 1s both;
+    filter: blur(3px);
   }
 
   &__link {
@@ -248,11 +249,6 @@
     flex-direction: row;
   }
 
-  &__archive {
-    @include border-slide();
-
-    @extend %letter-spacing;
-  }
 
   &__social {
     display: flex;

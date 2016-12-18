@@ -1,5 +1,5 @@
 # Site settings
-email: 
+email: diwakar03121997@gmail.com
 baseurl: "https://magician03.github.io/blog"
 paginate: 5
 paginate_path: "/blog/page-:num"
@@ -7,17 +7,27 @@ google_analytics:
 
 # SEO settings
 title: Magician03's Blog
-description: 
+description: Blog of magician03 for sharing ideas, deep thoughts, experiences, newbie suggestions and many more.
 url: "https://magician03.github.io/blog"
-twitter_username: 
+twitter_username: magician_03
 default_img: 
 
 # Profile settings
-name: 
+name: Diwakar Moturu
 profile_img: 
-profile: 
+profile: "https://magician03.github.io/"
 social:
-  github: 
+  user: "https://magician03.github.io/"
+  github: "https://github.com/magician03"
+  medium: "https://medium.com/@magician03"
+  stack-overflow: "http://stackoverflow.com/users/4820340/diwakar-moturu?tab=profile"
+  quora: "https://www.quora.com/profile/Diwakar-Vinay"
+  linkedin: "https://www.linkedin.com/in/diwakar-moturu-63219610a"
+  facebook: "https://www.facebook.com/magician03"
+  twitter: "https://twitter.com/magician_03"
+  google-plus: "https://plus.google.com/+diwakarkumar03121997"
+  
+  
 
 # Build settings
 include: ["_categories"]
