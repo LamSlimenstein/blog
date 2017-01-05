@@ -363,6 +363,8 @@
   margin: 0 auto;
 
   font-family: $font-post;
+  font-size: 18px;
+  line-height: 1.58;
 
   @media (min-width: $mq-md) {
     width: 55%;
@@ -373,9 +375,6 @@
     line-height: 1.2;
   }
 
-  p:first-child {
-    font-size: 1.25em;
-  }
 
   a {
     border-bottom: 1px solid $color-alpha;
@@ -385,9 +384,6 @@
     padding-bottom: 0.75em;
   }
 
-  figure {
-    padding-bottom: 0.75em;
-  }
 
   figure > img {
     padding-bottom: 0;

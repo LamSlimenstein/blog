@@ -10,12 +10,12 @@ title: Magician03's Blog
 description: Blog of magician03 for sharing ideas, deep thoughts, experiences, newbie suggestions and many more.
 url: "https://magician03.github.io/blog"
 twitter_username: magician_03
-default_img: 
+default_img: "/pro-img.jpg"
 
 # Profile settings
 name: Diwakar Moturu
-profile_img: 
-profile: "https://magician03.github.io/"
+profile_img: "/pro-img.jpg"
+profile: "Hi, I am Diwakar, magician03 on Github and other networks. Information Technology Undergrad at Indian Institute of Information Technology Allahabad, class of 2019. Algorithms fanatic. Love to build products. Open Source Enthusiast. Ambivert. Programmer."
 social:
   user: "https://magician03.github.io/"
   github: "https://github.com/magician03"

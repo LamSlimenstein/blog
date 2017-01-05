@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://magician03.github.io/blog/2016/12/20/how-to-host-portfolio-and-blog-using-github-pages-harpjs/">
   <meta property="og:site_name" content="Magician03's Blog">
   <meta property="og:description" content="Blog of magician03 for sharing ideas, deep thoughts, experiences, newbie suggestions and many more.">
-  <meta property="og:image" content="https://source.unsplash.com/y02jEX_B0O0/2000x1000">
+  <meta property="og:image" content="https://source.unsplash.com/DtDlVpy-vvQ/2000x1000">
   <meta property="og:type" content="blog">
 
   <meta name="twitter:card" content="summary">
@@ -23,7 +23,7 @@
   <meta name="twitter:site" content="Magician03's Blog">
   <meta name="twitter:creator" content="@magician_03">
   <meta name="twitter:domain" content="https://magician03.github.io/blog">
-  <meta property="twitter:image" content="https://source.unsplash.com/y02jEX_B0O0/2000x1000">
+  <meta property="twitter:image" content="https://source.unsplash.com/DtDlVpy-vvQ/2000x1000">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Lora|Space+Mono:700">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -32,7 +32,7 @@
 
   <link rel="alternate" type="application/rss+xml" title="Magician03's Blog" href="https://magician03.github.io/blog/feed.xml">
   <link rel="canonical" href="https://magician03.github.io/blog/2016/12/20/how-to-host-portfolio-and-blog-using-github-pages-harpjs/">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400|Droid+Serif" rel="stylesheet">
 
   
 </head>
@@ -48,7 +48,7 @@
       <i class="fa fa-lg fa-arrow-left"></i>
       <span>Back to Posts</span>
     </a>
-    <figure class="absolute-bg mast__img" style="background-image: url('https://source.unsplash.com/y02jEX_B0O0/2000x1000');"></figure>
+    <figure class="absolute-bg mast__img" style="background-image: url('https://source.unsplash.com/DtDlVpy-vvQ/2000x1000');"></figure>
     <div class="mast__container">
       <span><time datetime="2016-12-20T00:00:00+00:00" itemprop="datePublished">Dec 20, 2016</time></span>
       <h1 itemprop="name headline">How to host Portfolio and Blog using GitHub Pages, HarpJS</h1>
@@ -67,19 +67,20 @@
 online Portfolio and super cool blog running on WordPress-like sites. But upon
 digging deep into it and spending some time on Web Development, I came to know
 about this awesome feature of GitHub, <em>GitHub-Pages,</em> where you can host and
-serve any number of static-sites for “<em>free</em>” with site names like . So why not
+serve any number of static-sites for “<em>free</em>” with site names like <code class="highlighter-rouge">username.github.io/project-name</code> . So why not
 use this free feature and host a <em>Personal portfolio</em> and also a <em>blog</em> built
 upon <em>HarpJS</em> a static-site builder built upon Node that preprocesses the
-blog/anything just to <em>HTML</em>/ <em>CSS</em>/ <em>JS</em>.</p>
+blog/anything just to <em>HTML, CSS &amp; JS</em>.</p>
 
-<p><strong>ProTip : **<em>Better to use *<a href="https://c9.io/">Cloud9</a> * online IDE for dedicated
-work space and testing</em></strong>.**</p>
+<p><strong>ProTip</strong> : <em>Better to use <a href="https://c9.io/">Cloud9</a> online IDE for dedicated
+work space and testing</em></p>
 
 <h3 id="getting-started">Getting Started</h3>
 
 <p>First, you’ll need to install <a href="https://git-scm.com/">Git</a>,
-<a href="https://nodejs.org/en/">NodeJS</a>, <a href="https://harpjs.com/">HarpJS</a>. <em>Familiarity
-with Git is helpful, but not a prerequisite.</em></p>
+<a href="https://nodejs.org/en/">NodeJS</a>, <a href="https://harpjs.com/">HarpJS</a>.</p>
+
+<p><em>Familiarity with Git is helpful, but not a prerequisite.</em></p>
 
 <p>Next, head to <a href="https://github.com/">GitHub</a>, create free account and explore the
 site.</p>
@@ -112,31 +113,29 @@ to write your blog in this ) .</p>
 20
 21
 22
-23
-24</pre></td><td class="code"><pre>    git init    
-    // initialises am empty git repository
-    
-    git remote -v    
-    //lists out the connected URLs to Github repos
-    
-    git remote add origin &lt;url&gt;    
-    //adds a url to existing repo on local machine
-    
-    git remote set-url origin &lt;url&gt; 
-    // sets/ modifies the url of existing repo on local machine
-    
-    git clone &lt;url&gt;             
-    //create a working copy of a local repository by running the command
-    
-    git add -A 
-    //adds or stores the changes
-    
-    git commit -am "&lt;message&gt;"   
-    //commit or finalise the changes
-    
-    git push origin master       
-    //sync the change with remote-url
-    <span class="w">
+23</pre></td><td class="code"><pre>git init    
+// initialises am empty git repository
+
+git remote -v    
+//lists out the connected URLs to Github repos
+
+git remote add origin &lt;url&gt;    
+//adds a url to existing repo on local machine
+
+git remote set-url origin &lt;url&gt; 
+// sets/ modifies the url of existing repo on local machine
+
+git clone &lt;url&gt;             
+//create a working copy of a local repository by running the command
+
+git add -A 
+//adds or stores the changes
+
+git commit -am "&lt;message&gt;"   
+//commit or finalise the changes
+
+git push origin master       
+//sync the change with remote-url<span class="w">
 </span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p><img src="https://cdn-images-1.medium.com/max/720/1*94Auz19EOBtPorAyybt9_A.jpeg" alt="" />
@@ -153,11 +152,13 @@ every time you modify your sites’ source code. GitHub automatically does it.
 <em>“Everything just works”</em> . Check out to their video to know what exactly it
 does and why I am very much fond of it.</p>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2MsN8gpT6jY" frameborder="0" allowfullscreen=""></iframe>
+
 <p>Ok, so you are now familiar with Git, GitHub, MarkDown, GitHub pages. Now, its
 time to dive in.</p>
 
 <p>Go ahead and <a href="https://github.com/new">create a new repository</a> in GitHub named
-<em>username.github.io, *where *username</em> is your username on GitHub. Repository
+<code class="highlighter-rouge">username.github.io</code>, where <code class="highlighter-rouge">username</code> is your username on GitHub. Repository
 should be public for publishing. Add a license of your own choice ( optional ) .</p>
 
 <p><img src="https://cdn-images-1.medium.com/max/720/1*KdnHaz650TxADK_qdyRWug.png" alt="" />
@@ -165,23 +166,21 @@ should be public for publishing. Add a license of your own choice ( optional ) .
 
 <p>Clone the Repository to your local system</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/username/username.github.io
-</code></pre>
-</div>
+<figure class="highlight"><pre><code class="language-git" data-lang="git"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>    git clone https://github.com/username/username.github.io<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>Lets test it now, run the following commands in your Command Prompt or Terminal.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>cd username.github.io
-
-echo "Hello World" &gt; index.html
-
-git add --all
-
-git commit -m "Initial commit"
-
-git push -u origin master
-</code></pre>
-</div>
+<figure class="highlight"><pre><code class="language-git" data-lang="git"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="code"><pre>    cd username.github.io
+    echo "Hello World" &gt; index.html
+    git add --all
+    git commit -m "Initial commit"
+    git push -u origin master<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>You’re done. As simple as that. Now wait for 5–10 minutes. Fire up your browser
 and go to</p>
@@ -203,6 +202,13 @@ sites</a>)</li>
 <p>While building up your site, it would be a convenient for fellow developers to
 explore your repository if you have a good file structure. One good-olden
 convention is mentioned below.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">▾ /
+  ▪ styles/
+  ▪ scripts/
+  ▪ images/
+  ▪ index.html
+  </code></pre></figure>
 
 <p>Make sure commit your project at various stages of development. In case you are
 not satisfied with the final output, you can revert back to earlier commits and
@@ -244,7 +250,7 @@ platforms, check about it
 )</p>
 
 <p>Head on to Github and create a new repository with the name of your blog, your
-final bog will be hosted at * . *Then ,go to settings, choose your  branch as
+final bog will be hosted at <code class="highlighter-rouge">&lt;username&gt;.github.io/&lt;blogName&gt;</code>. Then ,go to settings, choose your <code class="highlighter-rouge">master</code> branch as
 github-pages site.</p>
 
 <p>I am assuming you have already installed HarpJS as suggested in <em>Getting
@@ -253,65 +259,78 @@ and  to an empty folder where you want to create and <em>initialise</em> your ne
 over. ( Use Git for version control with remote earlier created repo
 remote-url).</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>harp init my-harp-blog
-</code></pre>
-</div>
+<figure class="highlight"><pre><code class="language-git" data-lang="git"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>harp init my-harp-blog<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
-<p>This creates a folder named <em>my-harp-blog,</em> looks as follows.</p>
+<p>This creates a folder named <code class="highlighter-rouge">my-harp-blog</code>, looks as follows.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">▾ /
+  ▪ _layout.jade
+  ▪ 404.jade
+  ▪ index.jade
+  ▪ main.less
+  </code></pre></figure>
 
 <p>Now, start your server locally to test it locally using</p>
 
-<p>And go to <em>localhost:9000</em> to look at the rudimentary version of your blog.</p>
+<p>And go to <code class="highlighter-rouge">localhost:9000</code> to look at the rudimentary version of your blog.</p>
 
-<h3 id="markdownhttpsharpjscomdocsdevelopmentmarkdown"><a href="https://harpjs.com/docs/development/markdown">Markdown</a>,</h3>
-<p><a href="https://harpjs.com/docs/development/layout">Layouts</a> and
-<a href="https://harpjs.com/docs/development/partial">Partials</a></p>
+<h3 id="markdownhttpsharpjscomdocsdevelopmentmarkdown-layoutshttpsharpjscomdocsdevelopmentlayout-and-partialshttpsharpjscomdocsdevelopmentpartial"><a href="https://harpjs.com/docs/development/markdown">Markdown</a>, <a href="https://harpjs.com/docs/development/layout">Layouts</a> and <a href="https://harpjs.com/docs/development/partial">Partials</a></h3>
 
 <p>Just skim through the documentations that are hyper-linked in the paragraph
 title above, to get an idea of what exactly they are and what they do.</p>
 
 <p>Each Markdown file in the root directory add a new page to the blog. Go ahead
-and create an <em>About Me</em> page with contents written in markdownwith file name as
+and create an <em>About Me</em> page with contents written in markdownwith file name as <code class="highlighter-rouge">aboutme.md</code>
 .</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code># About Me
+<figure class="highlight"><pre><code class="language-git" data-lang="git"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4</pre></td><td class="code"><pre># About Me
 
 Hi, I am Diwakar. I love build cool stuff that helps the world. I am currently an I.T. Undergrad Sophomore in India.
-</code></pre>
-</div>
+    <span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
-<p>Now save your file and go to server running. Yup, your changes are there running
+<p>Now save your file and go to <code class="highlighter-rouge">localhost:9000/aboutme</code> server running. Yup, your changes are there running
 live.</p>
 
 <p>(* Harp does hot-reloading/ live-reloading, so you do not need to restart your
 server for every change you make.* )</p>
 
 <p>Layouts are used for establishing repeating structures, whether it’s a header
-and footer or something more complicated. The  file contains this markup. By
+and footer or something more complicated. The <code class="highlighter-rouge">_layout</code> file contains this markup. By
 convention, Harp doesn’t serve files or folders with an underscore preceding
-their name. Essentially, this  becomes a wrapper for the files that <em>are</em>
+their name. Essentially, this <code class="highlighter-rouge">_layout.jade</code> becomes a wrapper for the files that <em>are</em>
 served.</p>
 
-<p>The content from your ,  and  are all brought into the layout wherever you use
-the variable :</p>
+<p>The content from your <code class="highlighter-rouge">about.md</code>, <code class="highlighter-rouge">404.jade</code> and <code class="highlighter-rouge">index.jade</code> are all brought into the layout wherever you use
+the variable <code class="highlighter-rouge">yield</code>:</p>
 
-<p>Now, head on to  and make a template for your blog homepage. Here is an example
+<p>Now, head on to <code class="highlighter-rouge">_layout.jade</code> and make a template for your blog homepage. Here is an example
 :</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>doctype
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="code"><pre>doctype
 html
   head
     link(rel="stylesheet", href="/main.css")
   body
     != yield
-</code></pre>
-</div>
+        <span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>( <em>The language used is *<a href="https://github.com/pugjs/pug#pug">jade</a></em>, you can use
 HTML also, Jade feels more clearer and easier once you get acquainted and robust
 too.*)</p>
 
-<p>Notice that  is referenced, even though that file isn’t actually in the folder; 
+<p>Notice that <code class="highlighter-rouge">main.css</code> is referenced, even though that file isn’t actually in the folder; <code class="highlighter-rouge">main.less</code>
 is. Because Harp has preprocessing built in, there’s no need to have the
 compiled files around, cluttering up your app. Update and save the LESS file,
 and your changes are already in the browser.</p>
@@ -321,17 +340,28 @@ and your changes are already in the browser.</p>
 <p>You might want your blog to actually have some articles. Go ahead and write a
 few posts. I can wait.</p>
 
-<p>Now, I would like to access my first article at , so I’ll create a folder called
+<p>Now, I would like to access my first article at <code class="highlighter-rouge">localhost:9000/articles/another-article</code> , so I’ll create a folder called <code class="highlighter-rouge">articles</code>
 . Folders are for people and so are URLs; make the directory structure mirror
 the URL you want.</p>
 
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">▾ /
+  ▪ _layout.jade
+  ▪ 404.jade
+  ▪ index.jade
+  ▪ main.less
+  ▾ articles/
+    ▪ _data.json
+    ▪ a-simple-article.md
+    ▪ another-article.md
+    </code></pre></figure>
+
 <p>There is nothing unexpected going on inside the articles I added, they are just
 Markdown. Information about the articles, beyond the articles themselves, is
-stored inside the  file.</p>
+stored inside the <code class="highlighter-rouge">_data.json</code> file.</p>
 
 <h3 id="flexible-metadata">Flexible Metadata</h3>
 
-<p>Keeping metadata inside , rather than inside each individual  file, works well
+<p>Keeping metadata inside , rather than inside each individual <code class="highlighter-rouge">.md</code> file, works well
 for a number of reasons:</p>
 
 <ol>
@@ -339,19 +369,34 @@ for a number of reasons:</p>
 writing.</li>
   <li>Metadata for posts, images, videos or anything else can be added in the same
 way.</li>
-  <li>Different files can still easily make use of this .</li>
-  <li>The order of information can come from the , rather than requiring anything of
+  <li>Different files can still easily make use of this <code class="highlighter-rouge">_data.json</code>.</li>
+  <li>The order of information can come from the <code class="highlighter-rouge">_data.json</code>, rather than requiring anything of
 the file name</li>
 </ol>
 
-<p>By adding the title, date, or any other information in a  file inside the
+<p>By adding the title, date, or any other information in a <code class="highlighter-rouge">_data.json</code> file inside the
 article itself, you can get the most out of using Markdown and just worry about
 writing.</p>
 
-<p>For this blog, I decided to just add the title in my  file for now:</p>
+<p>For this blog, I decided to just add the title in my <code class="highlighter-rouge">_data.json</code> file for now:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">{</span>
+  <span class="s2">"a-good-article"</span>: <span class="o">{</span>
+    <span class="s2">"title"</span>: <span class="s2">"A Good Article"</span>
+  <span class="o">}</span>,
+  <span class="s2">"a-complicated-article"</span>: <span class="o">{</span>
+    <span class="s2">"title"</span>: <span class="s2">"Another Article"</span>
+  <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
 
 <p>Using Jade, it’s possible to iterate over this metadata, listing out all the
-articles. I’ve added the following to .</p>
+articles. I’ve added the following to <code class="highlighter-rouge">index.jade</code>.</p>
+
+<figure class="highlight"><pre><code class="language-jade" data-lang="jade">ul
+  each article, slug in public.articles._data
+    li
+      a(href="/articles/#{ slug }") #{ article.title }
+      </code></pre></figure>
 
 <p>As you’d expect, there’s a list of articles on the home page now.</p>
 
@@ -359,25 +404,41 @@ articles. I’ve added the following to .</p>
 
 <p>This blog is still missing a way to navigate. It would be nice to have the nav
 in the footer as well as the header of our layout, so it’s present when someone
-reaches the bottom of an article. Harp’s  function makes this possible without
+reaches the bottom of an article. Harp’s <code class="highlighter-rouge">partial</code> function makes this possible without
 writing the same markup multiple times.</p>
 
 <h3 id="partials">Partials</h3>
 
-<p>brings one file into another. You could use any text-based file in your
+<p><code class="highlighter-rouge">Partial()</code> brings one file into another. You could use any text-based file in your
 application as a partial. Usually you’ll want to bring in snippets of code
-rather than entire pages, but you can use  for either.</p>
+rather than entire pages, but you can use <code class="highlighter-rouge">partial()</code> for either.</p>
 
-<p>As with the  file, adding an underscore to the beginning of a file’s name
+<p>As with the <code class="highlighter-rouge">_layout</code> file, adding an underscore to the beginning of a file’s name
 prevents it from generating its own page, which is great for snippets of code.
 This convention is true for folders, too: name a folder with an underscore at
 the beginning, and nothing inside will be served directly. Folders with a
 leading underscore are a great place to store partials. I created a new folder
-called  for this purpose.</p>
+called <code class="highlighter-rouge">_shared</code> for this purpose.</p>
 
-<p>Inside  is a new file named .</p>
+<p>Inside  is a new file named <code class="highlighter-rouge">nav.jade</code>.</p>
 
-<p>Now, in , I’m using this file with :</p>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">nav
+  a<span class="o">(</span><span class="nv">href</span><span class="o">=</span><span class="s2">"/"</span><span class="o">)</span> Home
+  a<span class="o">(</span><span class="nv">href</span><span class="o">=</span><span class="s2">"/about"</span><span class="o">)</span> About
+  </code></pre></figure>
+
+<p>Now, in <code class="highlighter-rouge">_layout.jade</code>, I’m using this file with <code class="highlighter-rouge">partial()</code>:</p>
+
+<figure class="highlight"><pre><code class="language-pug" data-lang="pug">doctype
+html
+  head
+    link(rel="stylesheet", href="/main.css")
+  body
+    != partial("_shared/nav")
+    != yield
+    footer
+      != partial("_shared/nav")
+    </code></pre></figure>
 
 <p>Now, the nav can go at the top and bottom of the blog posts without the markup
 needing to be duplicated. This is a simple example, but you can probably imagine
@@ -391,42 +452,58 @@ how useful partials are once parts of your blog can be reused anywhere.</p>
 Any Harp can be compiled to simple HTML, CSS &amp; JavaScript files, and can be
 published anywhere.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>harp compile
-</code></pre>
-</div>
+<figure class="highlight"><pre><code class="language-git" data-lang="git"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>harp compile<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>This command generates all the required HTML, CSS &amp; JavaScript in  folder in
 your blog directory. Now copy the contents of  and put it in another folder,
 such that it contains</p>
 
 <ul>
-  <li>index.html of  at root</li>
+  <li>index.html of <code class="highlighter-rouge">www</code> at root</li>
   <li>harp blog directory inside it</li>
 </ul>
 
 <p>Here is the sample view of directory</p>
 
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">▾ /
+  ▪ 404.html
+  ▪ LICENSE
+  ▪ about.html
+  ▾ articles/
+    ▪  --// all articles as html pages
+  ▪ index.html
+  ▪ main.css
+  ▾ my-harp-blog/
+    ▪  --// your harp blog 
+    </code></pre></figure>
+
 <p><a href="https://github.com/magician03/blog/tree/gh-pages">Here</a> is the repo of my blog
 as an example.</p>
 
-<p>When you are done with this, now go to the  folder in the root directory and
-edit all the html’s  property as shown below.</p>
+<p>When you are done with this, now go to the <code class="highlighter-rouge">articles</code> folder in the root directory and edit all the html’s <code class="highlighter-rouge">href</code> property as shown below.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;li role="presentation"&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="code"><pre><span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
 //edit this to
-&lt;li role="presentation"&gt;&lt;a href="/blog/"&gt;Home&lt;/a&gt;&lt;/li&gt;
+<span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/blog/"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
 //another example:
-&lt;link rel="stylesheet" href="/main.css"&gt;
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/main.css"</span><span class="nt">&gt;</span>
 //edit this to
-&lt;link rel="stylesheet" href="/blog/main.css"&gt;
-Do this only for resources hosted by you, do not change the href of the ones hosted by CDNs
-</code></pre>
-</div>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/blog/main.css"</span><span class="nt">&gt;</span>
 
-<p>This is because all our resources are present at  instead of  for the blog. Now,
-any idea what is present at  ? Your Portfolio’s resources !!!</p>
+Do this only for resources hosted by you, do not change the href of the ones hosted by CDNs<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
-<p>Now push your to the github repo to be hosted under Github-Pages. Head on to</p>
+<p>This is because all our resources are present at <code class="highlighter-rouge">/blog/</code> instead of <code class="highlighter-rouge">/</code> for the blog. Now, any idea what is present at <code class="highlighter-rouge">/</code> ? Your Portfolio’s resources !!!
+Now push your to the github repo to be hosted under Github-Pages. Head on to <code class="highlighter-rouge">username.github.io/blogname</code></p>
 
 <p>( <em>To modify your blog later, you first need to modify the harp-blog folder,
 then compile it, bring the flattened HTML, CSS, JS to root, edit html files’
@@ -438,44 +515,39 @@ href in root folder, push it</em> )</p>
 
 <p>Thanks for making it till here. Happy Coding !</p>
 
-<h3 id="diwakar-moturuhttpsmediumcommagician03"><a href="https://medium.com/@magician03">Diwakar Moturu</a></h3>
-
-<p>Hi there, I am new to blogging and writing. I am student, interested in
-programming and web Development.</p>
-
     </div>
   </section>
 
   <section class="profile">
     <div class="profile__card">
       <div class="profile__img">
-        <figure class="absolute-bg" style="background-image: url('');"></figure>
+        <figure class="absolute-bg" style="background-image: url('/pro-img.jpg');"></figure>
       </div>
       <div class="profile__container">
-        <p>https://magician03.github.io/</p>
+        <p>Hi, I am Diwakar, magician03 on Github and other networks. Information Technology Undergrad at Indian Institute of Information Technology Allahabad, class of 2019. Algorithms fanatic. Love to build products. Open Source Enthusiast. Ambivert. Programmer.</p>
         
           <ul class="profile__social">
             
-              <li><a class="fa fa-lg fa-envelope-o" href="mailto:diwakar03121997@gmail.com"></a></li>
+              <li><a class="fa fa-envelope-o" href="mailto:diwakar03121997@gmail.com"></a></li>
             
             
-              <li><a class="fa fa-lg fa-user" href="https://magician03.github.io/" target="_blank"></a></li>
+              <li><a class="fa fa-user" href="https://magician03.github.io/" target="_blank"></a></li>
             
-              <li><a class="fa fa-lg fa-github" href="https://github.com/magician03" target="_blank"></a></li>
+              <li><a class="fa fa-github" href="https://github.com/magician03" target="_blank"></a></li>
             
-              <li><a class="fa fa-lg fa-medium" href="https://medium.com/@magician03" target="_blank"></a></li>
+              <li><a class="fa fa-medium" href="https://medium.com/@magician03" target="_blank"></a></li>
             
-              <li><a class="fa fa-lg fa-stack-overflow" href="http://stackoverflow.com/users/4820340/diwakar-moturu?tab=profile" target="_blank"></a></li>
+              <li><a class="fa fa-stack-overflow" href="http://stackoverflow.com/users/4820340/diwakar-moturu?tab=profile" target="_blank"></a></li>
             
-              <li><a class="fa fa-lg fa-quora" href="https://www.quora.com/profile/Diwakar-Vinay" target="_blank"></a></li>
+              <li><a class="fa fa-quora" href="https://www.quora.com/profile/Diwakar-Vinay" target="_blank"></a></li>
             
-              <li><a class="fa fa-lg fa-linkedin" href="https://www.linkedin.com/in/diwakar-moturu-63219610a" target="_blank"></a></li>
+              <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/diwakar-moturu-63219610a" target="_blank"></a></li>
             
-              <li><a class="fa fa-lg fa-facebook" href="https://www.facebook.com/magician03" target="_blank"></a></li>
+              <li><a class="fa fa-facebook" href="https://www.facebook.com/magician03" target="_blank"></a></li>
             
-              <li><a class="fa fa-lg fa-twitter" href="https://twitter.com/magician_03" target="_blank"></a></li>
+              <li><a class="fa fa-twitter" href="https://twitter.com/magician_03" target="_blank"></a></li>
             
-              <li><a class="fa fa-lg fa-google-plus" href="https://plus.google.com/+diwakarkumar03121997" target="_blank"></a></li>
+              <li><a class="fa fa-google-plus" href="https://plus.google.com/+diwakarkumar03121997" target="_blank"></a></li>
             
           </ul>
         

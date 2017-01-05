@@ -3,13 +3,13 @@
  */
 $font-header: 'Roboto', sans-serif;
 $font-body: 'Open Sans', sans-serif;
-$font-post: 'Open Sans', sans-serif;
+$font-post: 'Droid Serif', serif;
 
 $color-alpha: #856aa0;
 $color-alpha--light: #f2eff5;
 
 $color-black: #0a0a0a;
-$color-grey: #f8f9f9;
+$color-grey: #ffffff;
 $color-white: #fff;
 
 $mq-xs: 20em;
@@ -104,8 +104,17 @@ img {
 ol, ul {
   margin: 0;
   padding: 0;
+  list-style-type : none;
+}
 
-  list-style-type: none;
+.markdown-body ul, ol{
+  list-style-type: disc;
+  padding-bottom: 0.75em;
+}
+
+code {
+  background-color: #f2f2f2;
+  font-family: monospace;
 }
 
 /**
@@ -115,4 +124,12 @@ ol, ul {
   color: $color-white;
   background-color: $color-alpha;
   text-shadow: none;
+}
+
+@media screen and (max-width: 750px) {
+    iframe {
+        max-width: 100% !important;
+        width: auto !important;
+        height: auto !important;
+    }
 }

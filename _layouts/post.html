@@ -24,7 +24,7 @@ comments: true
 
   <section class="section-padding post" itemprop="articleBody">
     <div class="markdown-body">
-    {{ content | markdownify}}
+    {{ content }}
     </div>
   </section>
 
@@ -38,10 +38,10 @@ comments: true
         {% if site.email or site.social %}
           <ul class="profile__social">
             {% if site.email %}
-              <li><a class="fa fa-lg fa-envelope-o" href="mailto:{{ site.email }}"></a></li>
+              <li><a class="fa fa-envelope-o" href="mailto:{{ site.email }}"></a></li>
             {% endif %}
             {% for social in site.social %}
-              <li><a class="fa fa-lg fa-{{ social[0] }}" href="{{ social[1] }}" target="_blank"></a></li>
+              <li><a class="fa fa-{{ social[0] }}" href="{{ social[1] }}" target="_blank"></a></li>
             {% endfor %}
           </ul>
         {% endif %}

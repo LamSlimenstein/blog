@@ -5,8 +5,8 @@
     <description>Blog of magician03 for sharing ideas, deep thoughts, experiences, newbie suggestions and many more.</description>
     <link>https://magician03.github.io/blog/</link>
     <atom:link href="https://magician03.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 01 Jan 2017 19:55:12 +0000</pubDate>
-    <lastBuildDate>Sun, 01 Jan 2017 19:55:12 +0000</lastBuildDate>
+    <pubDate>Thu, 05 Jan 2017 17:04:12 +0000</pubDate>
+    <lastBuildDate>Thu, 05 Jan 2017 17:04:12 +0000</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -15,19 +15,20 @@
 online Portfolio and super cool blog running on WordPress-like sites. But upon
 digging deep into it and spending some time on Web Development, I came to know
 about this awesome feature of GitHub, &lt;em&gt;GitHub-Pages,&lt;/em&gt; where you can host and
-serve any number of static-sites for “&lt;em&gt;free&lt;/em&gt;” with site names like . So why not
+serve any number of static-sites for “&lt;em&gt;free&lt;/em&gt;” with site names like &lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io/project-name&lt;/code&gt; . So why not
 use this free feature and host a &lt;em&gt;Personal portfolio&lt;/em&gt; and also a &lt;em&gt;blog&lt;/em&gt; built
 upon &lt;em&gt;HarpJS&lt;/em&gt; a static-site builder built upon Node that preprocesses the
-blog/anything just to &lt;em&gt;HTML&lt;/em&gt;/ &lt;em&gt;CSS&lt;/em&gt;/ &lt;em&gt;JS&lt;/em&gt;.&lt;/p&gt;
+blog/anything just to &lt;em&gt;HTML, CSS &amp;amp; JS&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;ProTip : **&lt;em&gt;Better to use *&lt;a href=&quot;https://c9.io/&quot;&gt;Cloud9&lt;/a&gt; * online IDE for dedicated
-work space and testing&lt;/em&gt;&lt;/strong&gt;.**&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ProTip&lt;/strong&gt; : &lt;em&gt;Better to use &lt;a href=&quot;https://c9.io/&quot;&gt;Cloud9&lt;/a&gt; online IDE for dedicated
+work space and testing&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h3&gt;
 
 &lt;p&gt;First, you’ll need to install &lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt;,
-&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;NodeJS&lt;/a&gt;, &lt;a href=&quot;https://harpjs.com/&quot;&gt;HarpJS&lt;/a&gt;. &lt;em&gt;Familiarity
-with Git is helpful, but not a prerequisite.&lt;/em&gt;&lt;/p&gt;
+&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;NodeJS&lt;/a&gt;, &lt;a href=&quot;https://harpjs.com/&quot;&gt;HarpJS&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Familiarity with Git is helpful, but not a prerequisite.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Next, head to &lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt;, create free account and explore the
 site.&lt;/p&gt;
@@ -60,31 +61,29 @@ to write your blog in this ) .&lt;/p&gt;
 20
 21
 22
-23
-24&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;    git init    
-    // initialises am empty git repository
-    
-    git remote -v    
-    //lists out the connected URLs to Github repos
-    
-    git remote add origin &amp;lt;url&amp;gt;    
-    //adds a url to existing repo on local machine
-    
-    git remote set-url origin &amp;lt;url&amp;gt; 
-    // sets/ modifies the url of existing repo on local machine
-    
-    git clone &amp;lt;url&amp;gt;             
-    //create a working copy of a local repository by running the command
-    
-    git add -A 
-    //adds or stores the changes
-    
-    git commit -am &quot;&amp;lt;message&amp;gt;&quot;   
-    //commit or finalise the changes
-    
-    git push origin master       
-    //sync the change with remote-url
-    &lt;span class=&quot;w&quot;&gt;
+23&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;git init    
+// initialises am empty git repository
+
+git remote -v    
+//lists out the connected URLs to Github repos
+
+git remote add origin &amp;lt;url&amp;gt;    
+//adds a url to existing repo on local machine
+
+git remote set-url origin &amp;lt;url&amp;gt; 
+// sets/ modifies the url of existing repo on local machine
+
+git clone &amp;lt;url&amp;gt;             
+//create a working copy of a local repository by running the command
+
+git add -A 
+//adds or stores the changes
+
+git commit -am &quot;&amp;lt;message&amp;gt;&quot;   
+//commit or finalise the changes
+
+git push origin master       
+//sync the change with remote-url&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/720/1*94Auz19EOBtPorAyybt9_A.jpeg&quot; alt=&quot;&quot; /&gt;
@@ -101,11 +100,13 @@ every time you modify your sites’ source code. GitHub automatically does it.
 &lt;em&gt;“Everything just works”&lt;/em&gt; . Check out to their video to know what exactly it
 does and why I am very much fond of it.&lt;/p&gt;
 
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/2MsN8gpT6jY&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
 &lt;p&gt;Ok, so you are now familiar with Git, GitHub, MarkDown, GitHub pages. Now, its
 time to dive in.&lt;/p&gt;
 
 &lt;p&gt;Go ahead and &lt;a href=&quot;https://github.com/new&quot;&gt;create a new repository&lt;/a&gt; in GitHub named
-&lt;em&gt;username.github.io, *where *username&lt;/em&gt; is your username on GitHub. Repository
+&lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io&lt;/code&gt;, where &lt;code class=&quot;highlighter-rouge&quot;&gt;username&lt;/code&gt; is your username on GitHub. Repository
 should be public for publishing. Add a license of your own choice ( optional ) .&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/720/1*KdnHaz650TxADK_qdyRWug.png&quot; alt=&quot;&quot; /&gt;
@@ -113,23 +114,21 @@ should be public for publishing. Add a license of your own choice ( optional ) .
 
 &lt;p&gt;Clone the Repository to your local system&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/username/username.github.io
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-git&quot; data-lang=&quot;git&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;    git clone https://github.com/username/username.github.io&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Lets test it now, run the following commands in your Command Prompt or Terminal.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd username.github.io
-
-echo &quot;Hello World&quot; &amp;gt; index.html
-
-git add --all
-
-git commit -m &quot;Initial commit&quot;
-
-git push -u origin master
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-git&quot; data-lang=&quot;git&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;    cd username.github.io
+    echo &quot;Hello World&quot; &amp;gt; index.html
+    git add --all
+    git commit -m &quot;Initial commit&quot;
+    git push -u origin master&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;You’re done. As simple as that. Now wait for 5–10 minutes. Fire up your browser
 and go to&lt;/p&gt;
@@ -151,6 +150,13 @@ sites&lt;/a&gt;)&lt;/li&gt;
 &lt;p&gt;While building up your site, it would be a convenient for fellow developers to
 explore your repository if you have a good file structure. One good-olden
 convention is mentioned below.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;▾ /
+  ▪ styles/
+  ▪ scripts/
+  ▪ images/
+  ▪ index.html
+  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Make sure commit your project at various stages of development. In case you are
 not satisfied with the final output, you can revert back to earlier commits and
@@ -192,7 +198,7 @@ platforms, check about it
 )&lt;/p&gt;
 
 &lt;p&gt;Head on to Github and create a new repository with the name of your blog, your
-final bog will be hosted at * . *Then ,go to settings, choose your  branch as
+final bog will be hosted at &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;username&amp;gt;.github.io/&amp;lt;blogName&amp;gt;&lt;/code&gt;. Then ,go to settings, choose your &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch as
 github-pages site.&lt;/p&gt;
 
 &lt;p&gt;I am assuming you have already installed HarpJS as suggested in &lt;em&gt;Getting
@@ -201,65 +207,78 @@ and  to an empty folder where you want to create and &lt;em&gt;initialise&lt;/em
 over. ( Use Git for version control with remote earlier created repo
 remote-url).&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;harp init my-harp-blog
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-git&quot; data-lang=&quot;git&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;harp init my-harp-blog&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;This creates a folder named &lt;em&gt;my-harp-blog,&lt;/em&gt; looks as follows.&lt;/p&gt;
+&lt;p&gt;This creates a folder named &lt;code class=&quot;highlighter-rouge&quot;&gt;my-harp-blog&lt;/code&gt;, looks as follows.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;▾ /
+  ▪ _layout.jade
+  ▪ 404.jade
+  ▪ index.jade
+  ▪ main.less
+  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Now, start your server locally to test it locally using&lt;/p&gt;
 
-&lt;p&gt;And go to &lt;em&gt;localhost:9000&lt;/em&gt; to look at the rudimentary version of your blog.&lt;/p&gt;
+&lt;p&gt;And go to &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:9000&lt;/code&gt; to look at the rudimentary version of your blog.&lt;/p&gt;
 
-&lt;h3 id=&quot;markdownhttpsharpjscomdocsdevelopmentmarkdown&quot;&gt;&lt;a href=&quot;https://harpjs.com/docs/development/markdown&quot;&gt;Markdown&lt;/a&gt;,&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://harpjs.com/docs/development/layout&quot;&gt;Layouts&lt;/a&gt; and
-&lt;a href=&quot;https://harpjs.com/docs/development/partial&quot;&gt;Partials&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;markdownhttpsharpjscomdocsdevelopmentmarkdown-layoutshttpsharpjscomdocsdevelopmentlayout-and-partialshttpsharpjscomdocsdevelopmentpartial&quot;&gt;&lt;a href=&quot;https://harpjs.com/docs/development/markdown&quot;&gt;Markdown&lt;/a&gt;, &lt;a href=&quot;https://harpjs.com/docs/development/layout&quot;&gt;Layouts&lt;/a&gt; and &lt;a href=&quot;https://harpjs.com/docs/development/partial&quot;&gt;Partials&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p&gt;Just skim through the documentations that are hyper-linked in the paragraph
 title above, to get an idea of what exactly they are and what they do.&lt;/p&gt;
 
 &lt;p&gt;Each Markdown file in the root directory add a new page to the blog. Go ahead
-and create an &lt;em&gt;About Me&lt;/em&gt; page with contents written in markdownwith file name as
+and create an &lt;em&gt;About Me&lt;/em&gt; page with contents written in markdownwith file name as &lt;code class=&quot;highlighter-rouge&quot;&gt;aboutme.md&lt;/code&gt;
 .&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# About Me
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-git&quot; data-lang=&quot;git&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;# About Me
 
 Hi, I am Diwakar. I love build cool stuff that helps the world. I am currently an I.T. Undergrad Sophomore in India.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+    &lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Now save your file and go to server running. Yup, your changes are there running
+&lt;p&gt;Now save your file and go to &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:9000/aboutme&lt;/code&gt; server running. Yup, your changes are there running
 live.&lt;/p&gt;
 
 &lt;p&gt;(* Harp does hot-reloading/ live-reloading, so you do not need to restart your
 server for every change you make.* )&lt;/p&gt;
 
 &lt;p&gt;Layouts are used for establishing repeating structures, whether it’s a header
-and footer or something more complicated. The  file contains this markup. By
+and footer or something more complicated. The &lt;code class=&quot;highlighter-rouge&quot;&gt;_layout&lt;/code&gt; file contains this markup. By
 convention, Harp doesn’t serve files or folders with an underscore preceding
-their name. Essentially, this  becomes a wrapper for the files that &lt;em&gt;are&lt;/em&gt;
+their name. Essentially, this &lt;code class=&quot;highlighter-rouge&quot;&gt;_layout.jade&lt;/code&gt; becomes a wrapper for the files that &lt;em&gt;are&lt;/em&gt;
 served.&lt;/p&gt;
 
-&lt;p&gt;The content from your ,  and  are all brought into the layout wherever you use
-the variable :&lt;/p&gt;
+&lt;p&gt;The content from your &lt;code class=&quot;highlighter-rouge&quot;&gt;about.md&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;404.jade&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;index.jade&lt;/code&gt; are all brought into the layout wherever you use
+the variable &lt;code class=&quot;highlighter-rouge&quot;&gt;yield&lt;/code&gt;:&lt;/p&gt;
 
-&lt;p&gt;Now, head on to  and make a template for your blog homepage. Here is an example
+&lt;p&gt;Now, head on to &lt;code class=&quot;highlighter-rouge&quot;&gt;_layout.jade&lt;/code&gt; and make a template for your blog homepage. Here is an example
 :&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;doctype
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;doctype
 html
   head
     link(rel=&quot;stylesheet&quot;, href=&quot;/main.css&quot;)
   body
     != yield
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+        &lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;( &lt;em&gt;The language used is *&lt;a href=&quot;https://github.com/pugjs/pug#pug&quot;&gt;jade&lt;/a&gt;&lt;/em&gt;, you can use
 HTML also, Jade feels more clearer and easier once you get acquainted and robust
 too.*)&lt;/p&gt;
 
-&lt;p&gt;Notice that  is referenced, even though that file isn’t actually in the folder; 
+&lt;p&gt;Notice that &lt;code class=&quot;highlighter-rouge&quot;&gt;main.css&lt;/code&gt; is referenced, even though that file isn’t actually in the folder; &lt;code class=&quot;highlighter-rouge&quot;&gt;main.less&lt;/code&gt;
 is. Because Harp has preprocessing built in, there’s no need to have the
 compiled files around, cluttering up your app. Update and save the LESS file,
 and your changes are already in the browser.&lt;/p&gt;
@@ -269,17 +288,28 @@ and your changes are already in the browser.&lt;/p&gt;
 &lt;p&gt;You might want your blog to actually have some articles. Go ahead and write a
 few posts. I can wait.&lt;/p&gt;
 
-&lt;p&gt;Now, I would like to access my first article at , so I’ll create a folder called
+&lt;p&gt;Now, I would like to access my first article at &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:9000/articles/another-article&lt;/code&gt; , so I’ll create a folder called &lt;code class=&quot;highlighter-rouge&quot;&gt;articles&lt;/code&gt;
 . Folders are for people and so are URLs; make the directory structure mirror
 the URL you want.&lt;/p&gt;
 
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;▾ /
+  ▪ _layout.jade
+  ▪ 404.jade
+  ▪ index.jade
+  ▪ main.less
+  ▾ articles/
+    ▪ _data.json
+    ▪ a-simple-article.md
+    ▪ another-article.md
+    &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
 &lt;p&gt;There is nothing unexpected going on inside the articles I added, they are just
 Markdown. Information about the articles, beyond the articles themselves, is
-stored inside the  file.&lt;/p&gt;
+stored inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;_data.json&lt;/code&gt; file.&lt;/p&gt;
 
 &lt;h3 id=&quot;flexible-metadata&quot;&gt;Flexible Metadata&lt;/h3&gt;
 
-&lt;p&gt;Keeping metadata inside , rather than inside each individual  file, works well
+&lt;p&gt;Keeping metadata inside , rather than inside each individual &lt;code class=&quot;highlighter-rouge&quot;&gt;.md&lt;/code&gt; file, works well
 for a number of reasons:&lt;/p&gt;
 
 &lt;ol&gt;
@@ -287,19 +317,34 @@ for a number of reasons:&lt;/p&gt;
 writing.&lt;/li&gt;
   &lt;li&gt;Metadata for posts, images, videos or anything else can be added in the same
 way.&lt;/li&gt;
-  &lt;li&gt;Different files can still easily make use of this .&lt;/li&gt;
-  &lt;li&gt;The order of information can come from the , rather than requiring anything of
+  &lt;li&gt;Different files can still easily make use of this &lt;code class=&quot;highlighter-rouge&quot;&gt;_data.json&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;The order of information can come from the &lt;code class=&quot;highlighter-rouge&quot;&gt;_data.json&lt;/code&gt;, rather than requiring anything of
 the file name&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;By adding the title, date, or any other information in a  file inside the
+&lt;p&gt;By adding the title, date, or any other information in a &lt;code class=&quot;highlighter-rouge&quot;&gt;_data.json&lt;/code&gt; file inside the
 article itself, you can get the most out of using Markdown and just worry about
 writing.&lt;/p&gt;
 
-&lt;p&gt;For this blog, I decided to just add the title in my  file for now:&lt;/p&gt;
+&lt;p&gt;For this blog, I decided to just add the title in my &lt;code class=&quot;highlighter-rouge&quot;&gt;_data.json&lt;/code&gt; file for now:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&quot;a-good-article&quot;&lt;/span&gt;: &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;title&quot;&lt;/span&gt;: &lt;span class=&quot;s2&quot;&gt;&quot;A Good Article&quot;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;,
+  &lt;span class=&quot;s2&quot;&gt;&quot;a-complicated-article&quot;&lt;/span&gt;: &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;title&quot;&lt;/span&gt;: &lt;span class=&quot;s2&quot;&gt;&quot;Another Article&quot;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Using Jade, it’s possible to iterate over this metadata, listing out all the
-articles. I’ve added the following to .&lt;/p&gt;
+articles. I’ve added the following to &lt;code class=&quot;highlighter-rouge&quot;&gt;index.jade&lt;/code&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-jade&quot; data-lang=&quot;jade&quot;&gt;ul
+  each article, slug in public.articles._data
+    li
+      a(href=&quot;/articles/#{ slug }&quot;) #{ article.title }
+      &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;As you’d expect, there’s a list of articles on the home page now.&lt;/p&gt;
 
@@ -307,25 +352,41 @@ articles. I’ve added the following to .&lt;/p&gt;
 
 &lt;p&gt;This blog is still missing a way to navigate. It would be nice to have the nav
 in the footer as well as the header of our layout, so it’s present when someone
-reaches the bottom of an article. Harp’s  function makes this possible without
+reaches the bottom of an article. Harp’s &lt;code class=&quot;highlighter-rouge&quot;&gt;partial&lt;/code&gt; function makes this possible without
 writing the same markup multiple times.&lt;/p&gt;
 
 &lt;h3 id=&quot;partials&quot;&gt;Partials&lt;/h3&gt;
 
-&lt;p&gt;brings one file into another. You could use any text-based file in your
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Partial()&lt;/code&gt; brings one file into another. You could use any text-based file in your
 application as a partial. Usually you’ll want to bring in snippets of code
-rather than entire pages, but you can use  for either.&lt;/p&gt;
+rather than entire pages, but you can use &lt;code class=&quot;highlighter-rouge&quot;&gt;partial()&lt;/code&gt; for either.&lt;/p&gt;
 
-&lt;p&gt;As with the  file, adding an underscore to the beginning of a file’s name
+&lt;p&gt;As with the &lt;code class=&quot;highlighter-rouge&quot;&gt;_layout&lt;/code&gt; file, adding an underscore to the beginning of a file’s name
 prevents it from generating its own page, which is great for snippets of code.
 This convention is true for folders, too: name a folder with an underscore at
 the beginning, and nothing inside will be served directly. Folders with a
 leading underscore are a great place to store partials. I created a new folder
-called  for this purpose.&lt;/p&gt;
+called &lt;code class=&quot;highlighter-rouge&quot;&gt;_shared&lt;/code&gt; for this purpose.&lt;/p&gt;
 
-&lt;p&gt;Inside  is a new file named .&lt;/p&gt;
+&lt;p&gt;Inside  is a new file named &lt;code class=&quot;highlighter-rouge&quot;&gt;nav.jade&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Now, in , I’m using this file with :&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;nav
+  a&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; Home
+  a&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/about&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; About
+  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Now, in &lt;code class=&quot;highlighter-rouge&quot;&gt;_layout.jade&lt;/code&gt;, I’m using this file with &lt;code class=&quot;highlighter-rouge&quot;&gt;partial()&lt;/code&gt;:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-pug&quot; data-lang=&quot;pug&quot;&gt;doctype
+html
+  head
+    link(rel=&quot;stylesheet&quot;, href=&quot;/main.css&quot;)
+  body
+    != partial(&quot;_shared/nav&quot;)
+    != yield
+    footer
+      != partial(&quot;_shared/nav&quot;)
+    &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Now, the nav can go at the top and bottom of the blog posts without the markup
 needing to be duplicated. This is a simple example, but you can probably imagine
@@ -339,42 +400,58 @@ how useful partials are once parts of your blog can be reused anywhere.&lt;/p&gt
 Any Harp can be compiled to simple HTML, CSS &amp;amp; JavaScript files, and can be
 published anywhere.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;harp compile
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-git&quot; data-lang=&quot;git&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;harp compile&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;This command generates all the required HTML, CSS &amp;amp; JavaScript in  folder in
 your blog directory. Now copy the contents of  and put it in another folder,
 such that it contains&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;index.html of  at root&lt;/li&gt;
+  &lt;li&gt;index.html of &lt;code class=&quot;highlighter-rouge&quot;&gt;www&lt;/code&gt; at root&lt;/li&gt;
   &lt;li&gt;harp blog directory inside it&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Here is the sample view of directory&lt;/p&gt;
 
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;▾ /
+  ▪ 404.html
+  ▪ LICENSE
+  ▪ about.html
+  ▾ articles/
+    ▪  --// all articles as html pages
+  ▪ index.html
+  ▪ main.css
+  ▾ my-harp-blog/
+    ▪  --// your harp blog 
+    &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
 &lt;p&gt;&lt;a href=&quot;https://github.com/magician03/blog/tree/gh-pages&quot;&gt;Here&lt;/a&gt; is the repo of my blog
 as an example.&lt;/p&gt;
 
-&lt;p&gt;When you are done with this, now go to the  folder in the root directory and
-edit all the html’s  property as shown below.&lt;/p&gt;
+&lt;p&gt;When you are done with this, now go to the &lt;code class=&quot;highlighter-rouge&quot;&gt;articles&lt;/code&gt; folder in the root directory and edit all the html’s &lt;code class=&quot;highlighter-rouge&quot;&gt;href&lt;/code&gt; property as shown below.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;li role=&quot;presentation&quot;&amp;gt;&amp;lt;a href=&quot;/&quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;presentation&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Home&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
 //edit this to
-&amp;lt;li role=&quot;presentation&quot;&amp;gt;&amp;lt;a href=&quot;/blog/&quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;presentation&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/blog/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Home&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
 //another example:
-&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;/main.css&quot;&amp;gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/main.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
 //edit this to
-&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;/blog/main.css&quot;&amp;gt;
-Do this only for resources hosted by you, do not change the href of the ones hosted by CDNs
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/blog/main.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
 
-&lt;p&gt;This is because all our resources are present at  instead of  for the blog. Now,
-any idea what is present at  ? Your Portfolio’s resources !!!&lt;/p&gt;
+Do this only for resources hosted by you, do not change the href of the ones hosted by CDNs&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Now push your to the github repo to be hosted under Github-Pages. Head on to&lt;/p&gt;
+&lt;p&gt;This is because all our resources are present at &lt;code class=&quot;highlighter-rouge&quot;&gt;/blog/&lt;/code&gt; instead of &lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt; for the blog. Now, any idea what is present at &lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt; ? Your Portfolio’s resources !!!
+Now push your to the github repo to be hosted under Github-Pages. Head on to &lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io/blogname&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;( &lt;em&gt;To modify your blog later, you first need to modify the harp-blog folder,
 then compile it, bring the flattened HTML, CSS, JS to root, edit html files’
@@ -385,11 +462,6 @@ href in root folder, push it&lt;/em&gt; )&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Make sure to comment below your experience, any doubts or for any suggestions.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Thanks for making it till here. Happy Coding !&lt;/p&gt;
-
-&lt;h3 id=&quot;diwakar-moturuhttpsmediumcommagician03&quot;&gt;&lt;a href=&quot;https://medium.com/@magician03&quot;&gt;Diwakar Moturu&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;Hi there, I am new to blogging and writing. I am student, interested in
-programming and web Development.&lt;/p&gt;
 </description>
         <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
         <link>https://magician03.github.io/blog/2016/12/20/how-to-host-portfolio-and-blog-using-github-pages-harpjs/</link>
@@ -697,45 +769,7 @@ with lazy continuation.&lt;/p&gt;
         <guid isPermaLink="true">https://magician03.github.io/blog/2016/12/18/cheat-sheet/</guid>
         
         
-        <category>Happy</category>
-        
-      </item>
-    
-      <item>
-        <title>Hello world</title>
-        <description>&lt;p&gt;Tbh vaporware mumblecore iceland echo park DIY. Plaid woke next level enamel pin, vegan cred salvia pug. XOXO sartorial synth gluten-free, cold-pressed mumblecore craft beer helvetica. Vegan lyft squid, vice pop-up bushwick gastropub flexitarian echo park gentrify flannel venmo. Banh mi ugh direct trade, tote bag irony tbh biodiesel. Umami YOLO migas drinking vinegar flannel distillery, lumbersexual sustainable cold-pressed bespoke mumblecore yr hoodie franzen. Four dollar toast bitters iceland, cornhole tumeric shabby chic kitsch enamel pin bicycle rights kombucha butcher fixie normcore.&lt;/p&gt;
-
-&lt;p&gt;Sartorial kale chips keytar freegan craft beer, tilde put a bird on it post-ironic knausgaard everyday carry aesthetic. Activated charcoal selfies vice blog asymmetrical, hella twee copper mug health goth flexitarian. Tattooed pickled cold-pressed, PBR&amp;amp;B hell of schlitz seitan. Retro williamsburg schlitz health goth messenger bag roof party. Migas fanny pack chillwave chambray. Post-ironic roof party wolf ethical. Tacos PBR&amp;amp;B beard, lumbersexual retro DIY tumeric selvage brunch.&lt;/p&gt;
-
-&lt;p&gt;Gentrify locavore selfies fam bicycle rights, biodiesel kombucha fixie vape lomo fanny pack mumblecore letterpress leggings kale chips. Biodiesel typewriter mlkshk man braid. Ugh fap snackwave microdosing synth live-edge. Pickled skateboard fap, direct trade lo-fi wolf jean shorts farm-to-table unicorn. Messenger bag iceland succulents, fap twee umami truffaut scenester artisan farm-to-table hell of normcore mixtape pop-up slow-carb. Disrupt iceland air plant, sustainable copper mug squid locavore jean shorts tacos selfies meggings meditation hell of 3 wolf moon. Schlitz thundercats lyft raclette green juice intelligentsia.&lt;/p&gt;
-
-&lt;p&gt;Four loko pinterest lo-fi beard kinfolk marfa. Man bun flannel activated charcoal blue bottle. Chillwave coloring book waistcoat hammock knausgaard selfies. Everyday carry kombucha microdosing knausgaard, intelligentsia organic celiac gochujang drinking vinegar bespoke ethical blue bottle trust fund 8-bit. Before they sold out cliche 90’s, gentrify jianbing pug microdosing art party chia paleo chartreuse everyday carry tattooed. Listicle taxidermy art party migas tote bag meditation, farm-to-table PBR&amp;amp;B. Poutine vaporware letterpress hell of.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 11 Oct 2016 00:00:00 +0000</pubDate>
-        <link>https://magician03.github.io/blog/2016/10/11/hello-world/</link>
-        <guid isPermaLink="true">https://magician03.github.io/blog/2016/10/11/hello-world/</guid>
-        
-        
-        <category>Happy</category>
-        
-      </item>
-    
-      <item>
-        <title>Craft Beer</title>
-        <description>&lt;p&gt;Tbh vaporware mumblecore iceland echo park DIY. Plaid woke next level enamel pin, vegan cred salvia pug. XOXO sartorial synth gluten-free, cold-pressed mumblecore craft beer helvetica. Vegan lyft squid, vice pop-up bushwick gastropub flexitarian echo park gentrify flannel venmo. Banh mi ugh direct trade, tote bag irony tbh biodiesel. Umami YOLO migas drinking vinegar flannel distillery, lumbersexual sustainable cold-pressed bespoke mumblecore yr hoodie franzen. Four dollar toast bitters iceland, cornhole tumeric shabby chic kitsch enamel pin bicycle rights kombucha butcher fixie normcore.&lt;/p&gt;
-
-&lt;p&gt;Sartorial kale chips keytar freegan craft beer, tilde put a bird on it post-ironic knausgaard everyday carry aesthetic. Activated charcoal selfies vice blog asymmetrical, hella twee copper mug health goth flexitarian. Tattooed pickled cold-pressed, PBR&amp;amp;B hell of schlitz seitan. Retro williamsburg schlitz health goth messenger bag roof party. Migas fanny pack chillwave chambray. Post-ironic roof party wolf ethical. Tacos PBR&amp;amp;B beard, lumbersexual retro DIY tumeric selvage brunch.&lt;/p&gt;
-
-&lt;p&gt;Gentrify locavore selfies fam bicycle rights, biodiesel kombucha fixie vape lomo fanny pack mumblecore letterpress leggings kale chips. Biodiesel typewriter mlkshk man braid. Ugh fap snackwave microdosing synth live-edge. Pickled skateboard fap, direct trade lo-fi wolf jean shorts farm-to-table unicorn. Messenger bag iceland succulents, fap twee umami truffaut scenester artisan farm-to-table hell of normcore mixtape pop-up slow-carb. Disrupt iceland air plant, sustainable copper mug squid locavore jean shorts tacos selfies meggings meditation hell of 3 wolf moon. Schlitz thundercats lyft raclette green juice intelligentsia.&lt;/p&gt;
-
-&lt;p&gt;Four loko pinterest lo-fi beard kinfolk marfa. Man bun flannel activated charcoal blue bottle. Chillwave coloring book waistcoat hammock knausgaard selfies. Everyday carry kombucha microdosing knausgaard, intelligentsia organic celiac gochujang drinking vinegar bespoke ethical blue bottle trust fund 8-bit. Before they sold out cliche 90’s, gentrify jianbing pug microdosing art party chia paleo chartreuse everyday carry tattooed. Listicle taxidermy art party migas tote bag meditation, farm-to-table PBR&amp;amp;B. Poutine vaporware letterpress hell of.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 07 Sep 2016 00:00:00 +0000</pubDate>
-        <link>https://magician03.github.io/blog/2016/09/07/craft-beer/</link>
-        <guid isPermaLink="true">https://magician03.github.io/blog/2016/09/07/craft-beer/</guid>
-        
-        
-        <category>Juice</category>
+        <category>CheatSheet</category>
         
       </item>
     

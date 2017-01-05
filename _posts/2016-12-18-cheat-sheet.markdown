@@ -3,7 +3,7 @@ layout: post
 title: "Markdown Cheatsheet"
 date: 2016-12-18
 categories:
-  - Happy
+  - CheatSheet
 description: 
 image: https://source.unsplash.com/y02jEX_B0O0/2000x1000
 image-sm: https://source.unsplash.com/y02jEX_B0O0/500x300
