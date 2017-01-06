@@ -3,11 +3,227 @@
   <channel>
     <title>Magician03&#39;s Blog</title>
     <description>Blog of magician03 for sharing ideas, deep thoughts, experiences, newbie suggestions and many more.</description>
-    <link>https://magician03.github.io/blog/</link>
-    <atom:link href="https://magician03.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 05 Jan 2017 17:06:19 +0000</pubDate>
-    <lastBuildDate>Thu, 05 Jan 2017 17:06:19 +0000</lastBuildDate>
+    <link>https://magician03.github.io/bloghttps://magician03.github.io/blog/</link>
+    <atom:link href="https://magician03.github.io/bloghttps://magician03.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 06 Jan 2017 06:52:20 +0000</pubDate>
+    <lastBuildDate>Fri, 06 Jan 2017 06:52:20 +0000</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Proxy config in Bash, NPM, Bower, Atom, Git &amp; Ionic</title>
+        <description>&lt;p&gt;Sometimes when you are building stuff behind huge networks like universities and
+corporates, you often face proxy configuration issues with many applications
+like NPM, Bower, Ionic, Git, Atom and Linux Bash itself. This article focuses on
+resolving these issues.&lt;/p&gt;
+
+&lt;h3 id=&quot;linux-bash&quot;&gt;Linux Bash&lt;/h3&gt;
+
+&lt;h5 id=&quot;with-authentication&quot;&gt;With Authentication&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;http_proxy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;http://username:password@[Your Proxy]:[Proxy Port]/&#39;&lt;/span&gt;    
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;https_proxy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;http://username:password@[Your Proxy]:[Proxy Port]/&#39;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ftp_proxy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;http://username:password@[Your Proxy]:[Proxy Port]/&#39;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;without-authentication&quot;&gt;Without Authentication&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;http_proxy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;http://[Your Proxy]:[Proxy Port]&#39;&lt;/span&gt;    
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;https_proxy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;http://[Your Proxy]:[Proxy Port]&#39;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ftp_proxy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;http://[Your Proxy]:[Proxy Port]&#39;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;view-proxy&quot;&gt;View Proxy&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;env | grep -i proxy&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;remove-proxy&quot;&gt;Remove proxy&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;unset &lt;/span&gt;http_proxy
+&lt;span class=&quot;nb&quot;&gt;unset &lt;/span&gt;https_proxy
+&lt;span class=&quot;nb&quot;&gt;unset &lt;/span&gt;ftp_proxy
+//these commands disable the proxy, temporarily &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;that particular bash session.&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;npm&quot;&gt;NPM&lt;/h3&gt;
+
+&lt;h5 id=&quot;with-authentication-1&quot;&gt;With Authentication&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;npm config &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;proxy &lt;span class=&quot;s2&quot;&gt;&quot;http://username:password@[Your Proxy]:[Proxy Port]/&quot;&lt;/span&gt;
+npm config &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;https-proxy &lt;span class=&quot;s2&quot;&gt;&quot;http://username:password@[Your Proxy]:[Proxy Port]/&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;without-authentication-1&quot;&gt;Without Authentication&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;npm config &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;https-proxy http://[Your Proxy]:[Proxy Port]
+npm config &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;proxy http://[Your Proxy]:[Proxy Port]&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;view-proxy-1&quot;&gt;View Proxy&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;npm config get https-proxy
+npm config get proxy&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;remove-proxy-1&quot;&gt;Remove proxy&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;npm config delete https-proxy
+npm config delete proxy
+
+//or
+
+npm config &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;https-proxy null
+npm config &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;proxy null&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;bower&quot;&gt;Bower&lt;/h3&gt;
+
+&lt;h5 id=&quot;with-authentication-2&quot;&gt;With Authentication&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;//add the lines to &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;.bowerrc&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;proxy&quot;&lt;/span&gt;:&lt;span class=&quot;s2&quot;&gt;&quot;http://username:password@[Your Proxy]:[Proxy Port]/&quot;&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;https-proxy&quot;&lt;/span&gt;:&lt;span class=&quot;s2&quot;&gt;&quot;http://username:password@[Your Proxy]:[Proxy Port]/&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;without-authentication-2&quot;&gt;Without Authentication&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;// add the lines to &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;.bowerrc&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;proxy&quot;&lt;/span&gt;:&lt;span class=&quot;s2&quot;&gt;&quot;http://[Your Proxy]:[Proxy Port]&quot;&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;https-proxy&quot;&lt;/span&gt;:&lt;span class=&quot;s2&quot;&gt;&quot;http://[Your Proxy]:[Proxy Port]&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;view-proxy-2&quot;&gt;View Proxy&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;cat .bowerrc&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;remove-proxy-2&quot;&gt;Remove proxy&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;// edit and remove the lines from &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;.bowerrc&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt; added earlier&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;atom&quot;&gt;Atom&lt;/h3&gt;
+
+&lt;h5 id=&quot;with-authentication-3&quot;&gt;With Authentication&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;apm config &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;proxy &lt;span class=&quot;s2&quot;&gt;&quot;http://username:password@[Your Proxy]:[Proxy Port]/&quot;&lt;/span&gt;
+apm config &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;https-proxy &lt;span class=&quot;s2&quot;&gt;&quot;http://username:password@[Your Proxy]:[Proxy Port]/&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;without-authentication-3&quot;&gt;Without Authentication&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;apm config &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;https-proxy http://[Your Proxy]:[Proxy Port]
+apm config &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;proxy http://[Your Proxy]:[Proxy Port]&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;view-proxy-3&quot;&gt;View Proxy&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;apm config get https-proxy
+apm config get proxy&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;remove-proxy-3&quot;&gt;Remove proxy&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;apm config delete https-proxy
+apm config delete proxy
+
+//or
+
+apm config &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;https-proxy null
+apm config &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;proxy null&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;git&quot;&gt;Git&lt;/h3&gt;
+
+&lt;h5 id=&quot;with-authentication-4&quot;&gt;With Authentication&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;git config --add http.proxy &lt;span class=&quot;s2&quot;&gt;&quot;http://username:password@[YourProxy]:[ProxyPort]/&quot;&lt;/span&gt;
+git config --add https.proxy &lt;span class=&quot;s2&quot;&gt;&quot;http://username:password@[YourProxy]:[ProxyPort]/&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;without-authentication-4&quot;&gt;Without Authentication&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;git config --add http.proxy http://[YourProxy]:[ProxyPort]
+git config --add https.proxy http://[YourProxy]:[ProxyPort]&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;view-proxy-4&quot;&gt;View Proxy&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;git config --get http.proxy
+git config --get https.proxy&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;remove-proxy-4&quot;&gt;Remove proxy&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;git config --unset http.proxy
+git config --unset https.proxy&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;ionic&quot;&gt;Ionic&lt;/h3&gt;
+
+&lt;h5 id=&quot;with-authentication-5&quot;&gt;With Authentication&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;//You can add proxy along with the a particular serve
+&lt;span class=&quot;nv&quot;&gt;PROXY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://username:password@[YourProxy]:[ProxyPort]/&quot;&lt;/span&gt; ionic start &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;your app]&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;without-authentication-5&quot;&gt;Without Authentication&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;//You can add proxy along with the a particular serve
+&lt;span class=&quot;nv&quot;&gt;PROXY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;http://[Your Proxy]:[Proxy Port] ionic start &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;your app]&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;em&gt;This post will be updated regularly with changes in configurations and new frameworks.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Comment below for any suggestions and framework/language requests.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the &lt;a href=&quot;https://medium.com/@magician03/proxy-config-in-bash-npm-bower-atom-git-ionic-56b545b76a6d&quot;&gt;Medium article&lt;/a&gt; for this post&lt;/p&gt;
+</description>
+        <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+        <link>https://magician03.github.io/bloghttps://magician03.github.io/blog/2017/01/05/proxy-config-in-bash-npm-bower-atom-git-ionic/</link>
+        <guid isPermaLink="true">https://magician03.github.io/bloghttps://magician03.github.io/blog/2017/01/05/proxy-config-in-bash-npm-bower-atom-git-ionic/</guid>
+        
+        
+        <category>Web</category>
+        
+        <category>Proxy</category>
+        
+      </item>
     
       <item>
         <title>How to host Portfolio and Blog using GitHub Pages, HarpJS</title>
@@ -462,10 +678,12 @@ href in root folder, push it&lt;/em&gt; )&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Make sure to comment below your experience, any doubts or for any suggestions.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Thanks for making it till here. Happy Coding !&lt;/p&gt;
+
+&lt;p&gt;This is the &lt;a href=&quot;https://medium.com/@magician03/how-to-host-portfolio-and-blog-using-github-pages-harpjs-bb301dd901ac&quot;&gt;Medium article&lt;/a&gt; for this post&lt;/p&gt;
 </description>
         <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
-        <link>https://magician03.github.io/blog/2016/12/20/how-to-host-portfolio-and-blog-using-github-pages-harpjs/</link>
-        <guid isPermaLink="true">https://magician03.github.io/blog/2016/12/20/how-to-host-portfolio-and-blog-using-github-pages-harpjs/</guid>
+        <link>https://magician03.github.io/bloghttps://magician03.github.io/blog/2016/12/20/how-to-host-portfolio-and-blog-using-github-pages-harpjs/</link>
+        <guid isPermaLink="true">https://magician03.github.io/bloghttps://magician03.github.io/blog/2016/12/20/how-to-host-portfolio-and-blog-using-github-pages-harpjs/</guid>
         
         
         <category>Web</category>
@@ -765,8 +983,8 @@ with lazy continuation.&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 18 Dec 2016 00:00:00 +0000</pubDate>
-        <link>https://magician03.github.io/blog/2016/12/18/cheat-sheet/</link>
-        <guid isPermaLink="true">https://magician03.github.io/blog/2016/12/18/cheat-sheet/</guid>
+        <link>https://magician03.github.io/bloghttps://magician03.github.io/blog/2016/12/18/cheat-sheet/</link>
+        <guid isPermaLink="true">https://magician03.github.io/bloghttps://magician03.github.io/blog/2016/12/18/cheat-sheet/</guid>
         
         
         <category>CheatSheet</category>

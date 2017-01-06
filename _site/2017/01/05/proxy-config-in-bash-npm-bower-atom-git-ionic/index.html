@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Proxy config in Bash, NPM, Bower, Atom, Git &amp; Ionic | Magician03's Blog</title>
+  <meta name="author" content="Diwakar Moturu">
+  <meta name="description" content="Blog of magician03 for sharing ideas, deep thoughts, experiences, newbie suggestions and many more.">
+  <meta property="og:title" content="Proxy config in Bash, NPM, Bower, Atom, Git &amp; Ionic | Magician03's Blog">
+  <meta property="og:url" content="https://magician03.github.io/bloghttps://magician03.github.io/blog/2017/01/05/proxy-config-in-bash-npm-bower-atom-git-ionic/">
+  <meta property="og:site_name" content="Magician03's Blog">
+  <meta property="og:description" content="Blog of magician03 for sharing ideas, deep thoughts, experiences, newbie suggestions and many more.">
+  <meta property="og:image" content="https://source.unsplash.com/BW0vK-FA3eg/2000x1000">
+  <meta property="og:type" content="blog">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content="Blog of magician03 for sharing ideas, deep thoughts, experiences, newbie suggestions and many more.">
+  <meta name="twitter:title" content="Proxy config in Bash, NPM, Bower, Atom, Git &amp; Ionic | Magician03's Blog">
+  <meta name="twitter:url" content="https://magician03.github.io/bloghttps://magician03.github.io/blog/2017/01/05/proxy-config-in-bash-npm-bower-atom-git-ionic/">
+  <meta name="twitter:site" content="Magician03's Blog">
+  <meta name="twitter:creator" content="@magician_03">
+  <meta name="twitter:domain" content="https://magician03.github.io/blog">
+  <meta property="twitter:image" content="https://source.unsplash.com/BW0vK-FA3eg/2000x1000">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Lora|Space+Mono:700">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link rel="stylesheet" href="https://magician03.github.io/blog/assets/css/main.css">
+
+  <link rel="alternate" type="application/rss+xml" title="Magician03's Blog" href="https://magician03.github.io/bloghttps://magician03.github.io/blog/feed.xml">
+  <link rel="canonical" href="https://magician03.github.io/bloghttps://magician03.github.io/blog/2017/01/05/proxy-config-in-bash-npm-bower-atom-git-ionic/">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400|Droid+Serif" rel="stylesheet">
+
+  
+</head>
+
+
+  <body>
+
+    <main>
+      <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="section-padding--lg mast">
+    <a class="nav nav--white" href="https://magician03.github.io/blog/">
+      <i class="fa fa-lg fa-arrow-left"></i>
+      <span>Back to Posts</span>
+    </a>
+    <figure class="absolute-bg mast__img" style="background-image: url('https://source.unsplash.com/BW0vK-FA3eg/2000x1000');"></figure>
+    <div class="mast__container">
+      <span><time datetime="2017-01-05T00:00:00+00:00" itemprop="datePublished">Jan 5, 2017</time></span>
+      <h1 itemprop="name headline">Proxy config in Bash, NPM, Bower, Atom, Git & Ionic</h1>
+      
+        <span>
+          Posted in Web, Proxy
+        </span>
+      
+      <span></span>
+    </div>
+  </header>
+
+  <section class="section-padding post" itemprop="articleBody">
+    <div class="markdown-body">
+    <p>Sometimes when you are building stuff behind huge networks like universities and
+corporates, you often face proxy configuration issues with many applications
+like NPM, Bower, Ionic, Git, Atom and Linux Bash itself. This article focuses on
+resolving these issues.</p>
+
+<h3 id="linux-bash">Linux Bash</h3>
+
+<h5 id="with-authentication">With Authentication</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3</pre></td><td class="code"><pre><span class="nb">export </span><span class="nv">http_proxy</span><span class="o">=</span><span class="s1">'http://username:password@[Your Proxy]:[Proxy Port]/'</span>    
+<span class="nb">export </span><span class="nv">https_proxy</span><span class="o">=</span><span class="s1">'http://username:password@[Your Proxy]:[Proxy Port]/'</span>
+<span class="nb">export </span><span class="nv">ftp_proxy</span><span class="o">=</span><span class="s1">'http://username:password@[Your Proxy]:[Proxy Port]/'</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h5 id="without-authentication">Without Authentication</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3</pre></td><td class="code"><pre><span class="nb">export </span><span class="nv">http_proxy</span><span class="o">=</span><span class="s1">'http://[Your Proxy]:[Proxy Port]'</span>    
+<span class="nb">export </span><span class="nv">https_proxy</span><span class="o">=</span><span class="s1">'http://[Your Proxy]:[Proxy Port]'</span>
+<span class="nb">export </span><span class="nv">ftp_proxy</span><span class="o">=</span><span class="s1">'http://[Your Proxy]:[Proxy Port]'</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h5 id="view-proxy">View Proxy</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>env | grep -i proxy<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h5 id="remove-proxy">Remove proxy</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4</pre></td><td class="code"><pre><span class="nb">unset </span>http_proxy
+<span class="nb">unset </span>https_proxy
+<span class="nb">unset </span>ftp_proxy
+//these commands disable the proxy, temporarily <span class="k">for </span>that particular bash session.<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h3 id="npm">NPM</h3>
+
+<h5 id="with-authentication-1">With Authentication</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre>npm config <span class="nb">set </span>proxy <span class="s2">"http://username:password@[Your Proxy]:[Proxy Port]/"</span>
+npm config <span class="nb">set </span>https-proxy <span class="s2">"http://username:password@[Your Proxy]:[Proxy Port]/"</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h5 id="without-authentication-1">Without Authentication</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre>npm config <span class="nb">set </span>https-proxy http://[Your Proxy]:[Proxy Port]
+npm config <span class="nb">set </span>proxy http://[Your Proxy]:[Proxy Port]<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h5 id="view-proxy-1">View Proxy</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre>npm config get https-proxy
+npm config get proxy<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h5 id="remove-proxy-1">Remove proxy</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="code"><pre>npm config delete https-proxy
+npm config delete proxy
+
+//or
+
+npm config <span class="nb">set </span>https-proxy null
+npm config <span class="nb">set </span>proxy null<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h3 id="bower">Bower</h3>
+
+<h5 id="with-authentication-2">With Authentication</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3</pre></td><td class="code"><pre>//add the lines to <span class="sb">`</span>.bowerrc<span class="sb">`</span>
+<span class="s2">"proxy"</span>:<span class="s2">"http://username:password@[Your Proxy]:[Proxy Port]/"</span>
+<span class="s2">"https-proxy"</span>:<span class="s2">"http://username:password@[Your Proxy]:[Proxy Port]/"</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h5 id="without-authentication-2">Without Authentication</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3</pre></td><td class="code"><pre>// add the lines to <span class="sb">`</span>.bowerrc<span class="sb">`</span>
+<span class="s2">"proxy"</span>:<span class="s2">"http://[Your Proxy]:[Proxy Port]"</span>
+<span class="s2">"https-proxy"</span>:<span class="s2">"http://[Your Proxy]:[Proxy Port]"</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h5 id="view-proxy-2">View Proxy</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>cat .bowerrc<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h5 id="remove-proxy-2">Remove proxy</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>// edit and remove the lines from <span class="sb">`</span>.bowerrc<span class="sb">`</span> added earlier<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h3 id="atom">Atom</h3>
+
+<h5 id="with-authentication-3">With Authentication</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre>apm config <span class="nb">set </span>proxy <span class="s2">"http://username:password@[Your Proxy]:[Proxy Port]/"</span>
+apm config <span class="nb">set </span>https-proxy <span class="s2">"http://username:password@[Your Proxy]:[Proxy Port]/"</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h5 id="without-authentication-3">Without Authentication</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre>apm config <span class="nb">set </span>https-proxy http://[Your Proxy]:[Proxy Port]
+apm config <span class="nb">set </span>proxy http://[Your Proxy]:[Proxy Port]<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h5 id="view-proxy-3">View Proxy</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre>apm config get https-proxy
+apm config get proxy<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h5 id="remove-proxy-3">Remove proxy</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="code"><pre>apm config delete https-proxy
+apm config delete proxy
+
+//or
+
+apm config <span class="nb">set </span>https-proxy null
+apm config <span class="nb">set </span>proxy null<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h3 id="git">Git</h3>
+
+<h5 id="with-authentication-4">With Authentication</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre>git config --add http.proxy <span class="s2">"http://username:password@[YourProxy]:[ProxyPort]/"</span>
+git config --add https.proxy <span class="s2">"http://username:password@[YourProxy]:[ProxyPort]/"</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h5 id="without-authentication-4">Without Authentication</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre>git config --add http.proxy http://[YourProxy]:[ProxyPort]
+git config --add https.proxy http://[YourProxy]:[ProxyPort]<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h5 id="view-proxy-4">View Proxy</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre>git config --get http.proxy
+git config --get https.proxy<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h5 id="remove-proxy-4">Remove proxy</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre>git config --unset http.proxy
+git config --unset https.proxy<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h3 id="ionic">Ionic</h3>
+
+<h5 id="with-authentication-5">With Authentication</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre>//You can add proxy along with the a particular serve
+<span class="nv">PROXY</span><span class="o">=</span><span class="s2">"http://username:password@[YourProxy]:[ProxyPort]/"</span> ionic start <span class="o">[</span>your app]<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h5 id="without-authentication-5">Without Authentication</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre>//You can add proxy along with the a particular serve
+<span class="nv">PROXY</span><span class="o">=</span>http://[Your Proxy]:[Proxy Port] ionic start <span class="o">[</span>your app]<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p><em>This post will be updated regularly with changes in configurations and new frameworks.</em></p>
+
+<p><em>Comment below for any suggestions and framework/language requests.</em></p>
+
+<p>This is the <a href="https://medium.com/@magician03/proxy-config-in-bash-npm-bower-atom-git-ionic-56b545b76a6d">Medium article</a> for this post</p>
+
+    </div>
+  </section>
+
+  <section class="profile">
+    <div class="profile__card">
+      <div class="profile__img">
+        <figure class="absolute-bg" style="background-image: url('/pro-img.jpg');"></figure>
+      </div>
+      <div class="profile__container">
+        <p>Hi, I am Diwakar, magician03 on Github and other networks. Information Technology Undergrad at Indian Institute of Information Technology Allahabad, class of 2019. Algorithms fanatic. Love to build products. Open Source Enthusiast. Ambivert. Programmer.</p>
+        
+          <ul class="profile__social">
+            
+              <li><a class="fa fa-envelope-o" href="mailto:diwakar03121997@gmail.com"></a></li>
+            
+            
+              <li><a class="fa fa-user" href="https://magician03.github.io/" target="_blank"></a></li>
+            
+              <li><a class="fa fa-github" href="https://github.com/magician03" target="_blank"></a></li>
+            
+              <li><a class="fa fa-medium" href="https://medium.com/@magician03" target="_blank"></a></li>
+            
+              <li><a class="fa fa-stack-overflow" href="http://stackoverflow.com/users/4820340/diwakar-moturu?tab=profile" target="_blank"></a></li>
+            
+              <li><a class="fa fa-quora" href="https://www.quora.com/profile/Diwakar-Vinay" target="_blank"></a></li>
+            
+              <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/diwakar-moturu-63219610a" target="_blank"></a></li>
+            
+              <li><a class="fa fa-facebook" href="https://www.facebook.com/magician03" target="_blank"></a></li>
+            
+              <li><a class="fa fa-twitter" href="https://twitter.com/magician_03" target="_blank"></a></li>
+            
+              <li><a class="fa fa-google-plus" href="https://plus.google.com/+diwakarkumar03121997" target="_blank"></a></li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </section>
+
+</article>
+
+<section class="section-share">
+    Share this on &rarr;
+    <a href="https://twitter.com/intent/tweet?text=Proxy config in Bash, NPM, Bower, Atom, Git & Ionic&url=https://magician03.github.io/blog/2017/01/05/proxy-config-in-bash-npm-bower-atom-git-ionic/&via=magician_03&related=magician_03" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=https://magician03.github.io/blog/2017/01/05/proxy-config-in-bash-npm-bower-atom-git-ionic/" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://plus.google.com/share?url=https://magician03.github.io/blog/2017/01/05/proxy-config-in-bash-npm-bower-atom-git-ionic/" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+    <a href="http://www.reddit.com/submit?url=https://magician03.github.io/blog/2017/01/05/proxy-config-in-bash-npm-bower-atom-git-ionic/&title=Proxy config in Bash, NPM, Bower, Atom, Git & Ionic" rel="nofollow" target="_blank" title="Share on Google+">Reddit</a>
+  
+</section>
+
+<section class="section-padding-comments">
+  
+  
+  <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://magician03-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+</section>
+
+
+
+  <section class="next">
+    <a class="next__link" href="https://magician03.github.io/blog/2016/12/20/how-to-host-portfolio-and-blog-using-github-pages-harpjs/" style="background-image: url('https://source.unsplash.com/DtDlVpy-vvQ/2000x1000');">
+      <div class="next__container">
+        <span>Read Next</span>
+        <h2>How to host Portfolio and Blog using GitHub Pages, HarpJS</h2>
+      </div>
+    </a>
+  </section>
+
+
+    </main>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script type="text/javascript" src="https://magician03.github.io/blog/assets/js/app.js"></script>
+
+
+  </body>
+
+</html>

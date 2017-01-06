@@ -473,3 +473,5 @@ That’s it. Its a wrap. You are done !!!
 *Make sure to comment below your experience, any doubts or for any suggestions.*
 
 Thanks for making it till here. Happy Coding !
+
+This is the [Medium article](https://medium.com/@magician03/how-to-host-portfolio-and-blog-using-github-pages-harpjs-bb301dd901ac) for this post
