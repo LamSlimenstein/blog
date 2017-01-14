@@ -3,7 +3,7 @@ layout: post
 title: "How to host Portfolio and Blog using GitHub Pages, HarpJS"
 date: 2016-12-20
 categories:
-  - Web
+  - Web-Dev
   - Beginner
   - GitHub-Pages
   - HarpJS
@@ -474,4 +474,4 @@ That’s it. Its a wrap. You are done !!!
 
 Thanks for making it till here. Happy Coding !
 
-This is the [Medium article](https://medium.com/@magician03/how-to-host-portfolio-and-blog-using-github-pages-harpjs-bb301dd901ac) for this post
+[Here](https://medium.com/@magician03/how-to-host-portfolio-and-blog-using-github-pages-harpjs-bb301dd901ac) is the Medium article for this post

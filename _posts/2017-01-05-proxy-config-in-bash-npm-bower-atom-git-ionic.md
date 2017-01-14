@@ -3,7 +3,7 @@ layout: post
 title: "Proxy config in Bash, NPM, Bower, Atom, Git & Ionic"
 date: 2017-01-05
 categories:
-  - Web
+  - Web-Dev
   - Proxy
 description: 
 image: https://source.unsplash.com/BW0vK-FA3eg/2000x1000
@@ -263,4 +263,4 @@ PROXY=http://[Your Proxy]:[Proxy Port] ionic start [your app]
 
 *Comment below for any suggestions and framework/language requests.*
 
-This is the [Medium article](https://medium.com/@magician03/proxy-config-in-bash-npm-bower-atom-git-ionic-56b545b76a6d) for this post
+[Here](https://medium.com/@magician03/proxy-config-in-bash-npm-bower-atom-git-ionic-56b545b76a6d) is the Medium article for this post.
